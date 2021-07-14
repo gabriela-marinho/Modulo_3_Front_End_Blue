@@ -1,0 +1,28 @@
+.calculadora{
+    background-color:#87CEFA;
+    
+}
+
+
+.visor{
+    background-color: rgb(65,105,225);
+    padding: 15px;
+    width: 700px;
+    text-align: right;
+    font-size: 30px;
+    border-top-left-radius:15px; /*borda do div*/
+    border-top-right-radius:15px; /*borda do div*/
+    border-radius: 15px; /*borda do div*/
+ 
+}
+
+.conteiner{
+    justify-content:center;
+    display: flex;
+}
+button {
+
+   
+   
+    justify-content: center;
+}
