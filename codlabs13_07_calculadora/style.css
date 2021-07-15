@@ -1,5 +1,9 @@
-.calculadora{
+.body{
     background-color:#87CEFA;
+}
+
+.calculadora{
+
     
 }
 
@@ -17,6 +21,7 @@
 }
 
 .conteiner{
+    width: 90%;
     justify-content:center;
     display: flex;
 }
