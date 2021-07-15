@@ -2,10 +2,7 @@
     background-color:#87CEFA;
 }
 
-.calculadora{
 
-    
-}
 
 
 .visor{
@@ -23,11 +20,15 @@
 .conteiner{
     width: 90%;
     justify-content:center;
-    display: flex;
+    display:center;
 }
-button {
+.linha1{
+    padding: 5px;
+    width: 500px;
+    text-align: center;
+    font-size: 100px;
+    border-top-left-radius:15px; /*borda do div*/
+    border-top-right-radius:15px; /*borda do div*/
+    border-radius: 15px; /*borda do div*/
 
-   
-   
-    justify-content: center;
 }
