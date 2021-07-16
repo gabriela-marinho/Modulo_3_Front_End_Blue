@@ -1,0 +1,15 @@
+/* reseta as configuraçoes que ja vem do navegador */
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Lora', serif;
+}
+
+img{
+    width: 10px;
+}
