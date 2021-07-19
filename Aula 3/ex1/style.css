@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} /* zero as configuraçoes do navegador*/
+
+body {
+    font-family: 'Poppins', sans-serif; /* propriedade colocada no css, mas o href fica no html*/
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+}
+
+header {
+    display: flex; /* alinhar no centro*/
+    
+    justify-content: center; /* Alinha em X (horizontal)*/
+    align-items: center; /*  Alinha em y (vertical)para usar esse item precisa ter OBRIGATORIAMENTE uma altura */ 
+    height: 20vh; /* aqui  é a altura solicitada pelo align-itens. A medida vh indica que ele será ajustavel em qlq tela*/
+}
+
+img {
+    width: 200px;
+}
+
+h1 {
+    font-size: 4em;
+    color: #3652e4;
+}
+
+h2 {
+    text-align: center;
+    color: #3652e4;
+    padding-bottom: 3rem;
+}
+
+.quadro { /*pai*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.agenda {/*filho*/
+    background-color: #3652e4;
+    color: #fff;
+    width: 400px;
+    border-radius: 10px; /*cria uma borda*/
+    display: flex;
+    flex-direction: column;/*inverte o x com y, os eixos coloca sas coisas horizontalmente uma do lado da outra*/
+    /* Quando vc usa o flex direction agora ele em Y */
+    justify-content: center; /*alinha ao centro*/
+    align-items: center;
+    box-shadow: 8px 8px 10px #888888; /*sombra site: https://getcssscan.com/css-box-shadow-examples*/
+    
+}
+
+.agenda:hover {/*quan d eu passar o mouse em cima muda a cor0*/
+    background-color: #4e67e4;
+}
+
+.presenca { /*filho*/
+    /*padding: um tanto(em cima e embaixo)  outro tanto(esquerda direita);tamanho interno*/
+    /*margin: tamanho externo*/
+    background-color: #3652e4;
+    color: #3652e4;
+    width: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* segue o tamanho da coluna*/
+    /* Quando vc usa o flex direction agora ele em Y */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 10px #888888;
+    padding-bottom: 1.5rem; /* aqui foi colocado no elemento pai para crescer a borda inferior da tabela*/
+}
+
+.presenca:hover {
+    background-color: #4e67e4;
+}
+
+h3 { /* se comporta como bloco*/
+    color: #fff;
+    padding: 0.4rem 0;
+}
+
+table {
+    width: 90%;
+    background-color: #fff;
+    border-collapse: collapse; /* junta as linhas da tabela em uma só*/
+}
+
+tr {
+    border: 4px solid #3652e4;
+}
+
+td, th {
+    padding: 0.4rem 0; /* aumenta as linhas e os espaços do lado*/
+    text-align: center;
+}
+
+/* @media(max-width: 1000px) {
+
+	.quadro {
+    		flex-direction: column;
+    		align-items: center;
+    		justify-content: center;
+	}
+	
+	.agenda {
+		padding-bottom: 1rem;
+	}
+	
+	.presenca {
+		margin-top: 2rem;
+		
+	}
+} */
